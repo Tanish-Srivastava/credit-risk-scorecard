@@ -8,7 +8,7 @@ A probability-of-default (PD) model and application scorecard built from the Len
 |---|---|---|
 | AUC | 0.692 | 0.680 |
 | Gini | 0.385 | 0.359 |
-| KS | 27.7 | — |
+| KS | 27.7 |  |
  
 - **Matches Lending Club's proprietary risk grade** on the held-out test set, using only primary application features (FICO, DTI, income, employment, credit history) rather than the platform's pre-computed grade.
 - **Well calibrated**: predicted default probabilities track actual default rates within ~0.5 percentage points across all ten risk deciles. the model's probabilities are accurate, not just correctly ranked.

@@ -19,7 +19,7 @@ Lending Club's `grade` is itself the output of a risk model, derived from the sa
  
 Grade (and its derivatives `sub_grade`, `int_rate`, `installment`) is therefore excluded from the feature set. It is retained separately and used as an **external benchmark**: after training, the independent model is compared against grade on the same test set. This turns "is the model any good?" into a concrete question: how close does an independent scorecard get to the platform's own grade?. This resulted in comparable performance from primary features alone.
  
-![ROC curve: independent model vs Lending Club grade](Images/roc_vs_grade.png)
+![ROC curve: independent model vs Lending Club grade]
  
 The two ROC curves sit almost on top of each other, with the independent model (blue) tracking and marginally edging Lending Club's grade (orange) across the full range. Grade's curve is visibly stepped, it is a coarse 7-level rating, while the model's continuous score fills in the gradations, which is where the small edge comes from.
  
